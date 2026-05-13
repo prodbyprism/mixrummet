@@ -28,10 +28,18 @@
             <a href="#hittahit">Hitta Hit</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
-        <button id="menuToggle" class="menu-toggle">
-    ☰
+<button id="menuToggle" class="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
 </button>
-</button>
+
+<div id="sideMenu" class="side-menu">
+    <a href="#home">Home</a>
+    <a href="#studio">Studios</a>
+    <a href="#gear">Gear</a>
+    <a href="#contact">Contact</a>
+</div>
 
     </header>
 
@@ -248,9 +256,7 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
 
 </section>
 
-   <!-- GEAR -->
-
-<section class="section" id="gear">
+<!-- <section class="section" id="gear">
 
     <div class="content fade-up">
 
@@ -262,8 +268,6 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
         </p>
 
         <div class="gear-grid">
-
-            <!-- RECORDING -->
 
             <div class="gear-item large">
 
@@ -280,8 +284,6 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
 
             </div>
 
-            <!-- MICROPHONES -->
-
             <div class="gear-item large">
 
                 <h3>Mikrofoner</h3>
@@ -293,8 +295,6 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
                 </ul>
 
             </div>
-
-            <!-- INSTRUMENTS -->
 
             <div class="gear-item large">
 
@@ -311,8 +311,6 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
 
             </div>
 
-            <!-- AMPS -->
-
             <div class="gear-item large">
 
                 <h3>Förstärkare & Pedaler</h3>
@@ -323,8 +321,6 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
                 </ul>
 
             </div>
-
-            <!-- MONITORING -->
 
             <div class="gear-item large">
 
@@ -342,6 +338,7 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
     </div>
 
 </section>
+-->
 
 <!-- Hitta Hit -->
 <section class="section dark-section-2" id="hittahit">
@@ -407,7 +404,7 @@ Vi sköter allt tekniskt så att du kan fokusera helt på framförandet. Vi erbj
 
                 <p>info@mixrummet.se</p>
 
-                <p>08-123 45 67</p>
+                <p>0708 60 31 83</p>
 
         </div>
 
@@ -472,11 +469,11 @@ window.addEventListener('scroll', () => {
 });
 
 const menuToggle = document.getElementById("menuToggle");
-const nav = document.querySelector(".nav");
+const sideMenu = document.getElementById("sideMenu");
 
 menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
     menuToggle.classList.toggle("active");
+    sideMenu.classList.toggle("open");
 });
 
     </script>
